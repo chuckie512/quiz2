@@ -1,4 +1,4 @@
-console.log("well hello there");
+//Charles Smith
 
 
 (function($){
@@ -7,17 +7,17 @@ console.log("well hello there");
 	// Use ajax to reach the api endpoint
 	// Whether or not you use jQuery, you still have to fix the jQuery errors. Removing jQuery is not fixing the problem.
 
-	console.log("I'm in the function");
+
 
 	$mouseover = $('.mouse-over');
 	$click     = $('.click');
 	$sub       = $('.submit');
     $button    = $('.button');
 
-    console.log($mouseover);
+
 	//on mouse over
 	$mouseover.mouseover( function() {
-        console.log("mouseover");
+
 		$this = $(this);
 		$(this).html('Scrooge McDuck!');
 		$(this).height($(this).height() + 50); //why would you make it bigger every time!?!??!?!?!?!?!?
@@ -25,7 +25,7 @@ console.log("well hello there");
 
 	//onclick
 	$click.click( function() {
-        console.log("click");
+
         $this = $(this);
 		$(this).html('Peace Out!');
 		$(this).fadeOut(1500);
@@ -34,10 +34,10 @@ console.log("well hello there");
 
 	//on submit
 	$sub.submit( function(e) {
-        console.log("submit");
+
 		e.preventDefault();
 		if ($(this).find('input[type="text"]').val() !== '') {
-            console.log("if");
+
 
 			$(this).find('input').fadeOut('slow');
 
@@ -51,11 +51,8 @@ console.log("well hello there");
             //$(".content").hide();
             $(".part2").append("<button class='keep'>keep it</button>");
             $(".keep").click(function(){
-                console.log("keep");
-                document.cookie="text="+$(".response").html();
-                console.log(document.cookie);
 
-              
+                document.cookie="text="+$(".response").html();
 
             });
         }
@@ -63,7 +60,7 @@ console.log("well hello there");
         var data = "quizData";
         xhttp.onreadystatechange = function() {
             if(xhttp.readyState==4) {
-                console.log(xhttp.responseText);
+
                 var response = JSON.parse(xhttp.responseText);
                 var arr = response.data;
                 var num = Math.floor((Math.random() * arr.length));
@@ -82,8 +79,7 @@ console.log("well hello there");
             $(".response").html("last time you chose <b>" + document.cookie.substring(5) + "</b>");
         }
         $(".timeout").hide();
-        console.log("ready!");
-		setTimeout( function(){$(".timeout").fadeIn('slow'); console.log("timeout");
+		setTimeout( function(){$(".timeout").fadeIn('slow');
         }, 1000);
     });
 
