@@ -1,6 +1,6 @@
 html body {
 	font-family: 'Helvetica', Arial, sans-serif;
-	color: #111
+	color: #111;
 	background: #E7E7E7;
 }
 
@@ -9,7 +9,7 @@ a {
 }
 
 .content {
-	text-align: center
+	text-align: center;
 	padding: 0 15% 20px;
 }
 
@@ -17,9 +17,9 @@ a {
 	text-transform: uppercase;
 	font-weight: bold;
 	margin: 20px 0;
+}
 
-
-content form {
+.content form {
 	padding: 10px;
 	width: 300px;
 	margin: 0 auto;
@@ -53,4 +53,18 @@ content form {
 
 .timeout {
 	background: #CCCCCC;
+
+}
+
+.part2{
+    text-align: center;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    background-color: #00bfbf;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 5px;
+}
+.part2 button{
+    background-color: #00bf00;
+    border-radius: 10px;
 }
